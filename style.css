@@ -1,0 +1,877 @@
+body {
+  min-height: 100%;
+  margin: 0;
+  /* padding: 0 20px; */
+  background: #deeaff;
+  background: linear-gradient(
+    90deg,
+    rgba(222, 234, 255, 1) 0%,
+    rgba(255, 219, 238, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#center {
+  /* center */
+  align-items: center;
+  /* center */
+}
+
+
+.corpo {
+  background: #ffffff;
+  padding: 40px 60px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 1000px;
+  /* height: 500px; */
+  min-height: 80vh;
+  max-width: 1000px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  margin: 30px auto; /* <-- centraliza horizontalmente */
+
+  position: relative;
+}
+
+/* config geral */
+
+/* pick color */
+:root {
+  --roxinho: rgb(179, 149, 219);
+  --roxito: rgb(197, 174, 228);
+  --lilac: #dfd4ee;
+  --lillilac: #f8f3ff;
+  --roxo-escuro: rgb(117, 77, 168);
+  --roxo-mais-escuro: rgb(103, 80, 134);
+  --amarelinho: #f7d07a;
+
+  --cinza: #505050;
+  --cinza-escuro: #242424;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "Poppins";
+
+  /* cor padrão */
+  color: var(--roxinho);
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+p, ul, ol {
+  font-family: "Noto Sans";
+  color: var(--cinza-escuro);
+}
+
+/* ---------------------------------------------- */
+
+/* ANCHOR header box */
+
+.headerbox {
+  background-color: white;
+  padding: 6px;
+}
+
+.headerbox p {
+  font-family: "noto sans";
+  margin: 0; /* remove margens padrão */
+  text-align: center;
+
+  font-size: 10px;
+  color: #242424;
+}
+
+/* ---- */
+
+/* ANCHOR menu principal */
+
+.menu ul {
+  list-style: none;
+
+  margin: 22px 10px 0px;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 10px;
+}
+
+.menu li {
+  width: 140px;
+}
+
+.menu a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: bold;
+
+  background-color: var(--roxito);
+
+  display: block;
+  padding: 20px;
+
+  border: 1px solid;
+  border-radius: 50px;
+
+  transition: background-color 300ms ease-out;
+}
+
+.menu a:hover {
+  background-color: var(--roxinho);
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR conteudo */
+
+#esquerda {
+  margin-top: auto;        /* empurra pro fim da coluna (lá embaixo) */
+  align-self: flex-start;    /* alinha na direita (eixo horizontal) */
+  width: max-content;      /* não ocupar 100% da largura */ 
+}
+
+.conteudo {
+  display: block;
+  margin-top: auto;
+}
+
+
+.conteudo summary {
+  opacity: 50%;
+  margin-top: 25px;
+  padding: 8px;
+
+  background-color: #f7f7f7;
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+  width: 180px;
+  
+  font-size: 10px;
+  color: #b6b6b6;
+  text-align: center;
+}
+
+.conteudo li {
+  font-size: 10px;
+  color: #b9b9b9;
+}
+
+.conteudo ul li::marker {
+  content: "✱ "
+}
+
+.conteudo[open] ul {
+  margin: 10px;
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR footer */
+
+.corpo footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-top: 12px;
+  /* respiro/linha */
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+
+  padding: 0 14px;
+}
+
+footer p {
+  font-size: 10px;
+  color: var(--cinza);
+
+  margin: 0;
+}
+
+footer img {
+  display: block;
+  margin: auto;
+}
+
+#croac {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 8px;
+
+  color: #9cb88f;
+}
+
+#sofia {
+  font-family: "Reenie Beanie";
+  font-size: 12px;
+  color: rgb(165, 165, 165);
+
+  margin: 0 2px;
+}
+
+#sofia a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--roxinho);
+  transition: color 300ms ease-out;
+}
+
+#sofia a:hover {
+  color: var(--lilac);
+}
+
+.textfooter img {
+  display: block;
+  margin-left: auto;
+}
+
+#icon-casa {
+  display: block;
+
+  width: 18px;
+  height: auto;
+  fill: var(--roxito);
+  transition: fill .2s, transform .2s;
+}
+
+.iconfooter a {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 50%;
+
+}
+
+.iconfooter a:hover #icon-casa {
+  fill: var(--lilac);          /* exemplo */
+  transform: translateY(0px) scale(1.45);
+}
+
+footer div {
+  margin-top: 10px;
+  /* outline: 1px solid yellow; */
+}
+
+.textfooter {
+min-width: 50%;
+}
+
+.iconfooter {
+  display: flex;
+  align-items: center;
+  min-width: 50%;
+}
+
+
+/* ---------------------------------------------- */
+/* ANCHOR media */
+
+.media {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.media video {
+  display: block;
+  margin: auto;
+  width: 50%;
+
+  border-radius: 40px;
+}
+
+.media p {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+.media audio {
+  border-radius: 20px;
+  color: #a2f77a;
+  opacity: 20%;
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR curiosidades */
+
+.caixacuriosidades p {
+  font-family: "noto sans";
+  font-size: 12px;
+  color: #41305a;
+
+  text-align: left;
+  margin-left: 25px;
+}
+
+.caixacuriosidades details {
+  border: 1px solid var(--lillilac);
+
+  padding: 8px 12px;
+  margin-bottom: 14px;
+
+  background-color: #f0e8fc;
+  border-radius: 12px;
+  border: 1px solid var(--lilac);
+
+  color: #7d64a0;
+}
+
+.caixacuriosidades summary {
+  font-weight: 400;
+}
+
+.caixacuriosidades strong {
+  font-weight: 600;
+}
+
+.curiosidades > p {
+  font-family: "noto sans";
+  color: var(--cinza-escuro);
+  margin: 0px 190px;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+.curiosidades strong {
+  color: var(--roxo-escuro);
+  /* border: 1px solid var(--lilac);
+  border-radius: 40px;
+  padding: 2px;*/
+}
+
+.curiosidades img {
+  display: block;
+  margin: 20px auto 26px;
+}
+
+/* ANCHOR pet.html */
+
+.meupet {
+  color: var(--cinza-escuro);
+}
+
+.infopet ul li::marker {
+  content: "★ ";
+  color: var(--lilac);
+  font-size: 0.8em; /* aqui você controla o tamanho só da estrela */
+}
+
+.infopet ul {
+  margin: 0;
+}
+
+.infopet strong {
+  color: var(--roxo-escuro);
+}
+
+.galeriapet {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 40px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.galeriapet img {
+  width: 220px;
+  border-radius: 100px;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308); */
+  border: 4px solid var(--roxito);
+}
+
+.meupet h4,
+h2 {
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
+
+/* navegação */
+
+.navegacao ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex; /* ativa flexbox */
+  justify-content: center; /* centraliza no meio */
+  gap: 40px; /* espaço entre as colunas */
+  flex-wrap: wrap; /* deixa quebrar de linha no responsivo */
+}
+
+.navegacao li {
+  flex: 1 1 240px; /* cada item ocupa espaço parecido */
+  /* largura máxima de cada “botão” */
+}
+
+.navegacao a {
+  text-decoration: none;
+  text-align: center;
+
+  display: block;
+  padding: 26px;
+
+  background-color: white;
+  border: 1px solid var(--roxito);
+  color: var(--roxo-escuro);
+
+  border-radius: 50px;
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR form.html */
+
+.labelgrupo {
+  display: block;
+}
+
+.field #nome {
+  width: 140px;
+  padding: 10px 8px;
+}
+
+.field #email {
+  width: 220px;
+  padding: 10px 8px;
+}
+
+.field #idade {
+  width: 24px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+form fieldset {
+  display: flex; /* ativa o flexbox */
+  flex-direction: column; /* empilha os campos */
+  justify-content: center; /* centraliza na vertical */
+
+  height: auto; /* define altura fixa do quadrado */
+  border: 2px solid #ccc; /* só pra visualizar */
+
+  margin-left: 12px;
+}
+
+.field {
+  margin: 10px;
+}
+
+.field input:focus {
+  outline: none;
+  background-color: var(--lillilac);
+}
+
+/* inputs */
+
+.write input {
+  border: solid 1px var(--lilac);
+  border-radius: 20px;
+}
+
+.sorvete {
+  font-family: "noto sans";
+}
+
+.sorvete fieldset {
+  border: none;
+}
+
+.sorvete label {
+  padding: 0px 4px;
+  margin-right: 6px; /* espaço entre cada input+label */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--roxinho);
+  cursor: pointer;
+  margin-right: -4px;
+}
+
+.options label:not(.labelgrupo):hover {
+  outline: 2px dotted var(--lilac); /* adiciona contorno azul quando passa o mouse */
+  border-radius: 16px;
+}
+
+.labelgrupo {
+  color: var(--roxo-escuro);
+
+  font-style: oblique;
+  font-weight: 560;
+
+  margin-bottom: 4px;
+}
+
+/* botão */
+
+.sorvete input[type="submit"] {
+  width: 90px;
+  height: 35px;
+  margin-left: 30px;
+
+  background-color: var(--roxito);
+  border-radius: 30px;
+
+  font-style: italic;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.sorvete input[type="submit"]:hover {
+  background: white;
+  color: var(--roxito);
+  border: 1px solid var(--lilac);
+}
+
+/* teste para remover as setinhas do input number */
+
+/* remove as setas do Chrome, Edge e Safari */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* remove as setas do Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR jogos.html */
+
+.tabela {
+  width: 80%;
+  border-collapse: collapse;
+  table-layout: auto;
+
+  margin: 0 auto; /* isso centraliza tabela */
+
+  font-family: "Noto Sans";
+}
+
+.tabela th,
+.tabela td {
+  padding: 4px 6px;
+  border: 1px solid var(--cinza);
+  text-align: center;
+}
+
+.tabela th:first-child,
+.tabela td:first-child {
+  width: 12ch; /* ajuste: 10–18ch costuma funcionar bem */
+  height: 40px;
+}
+
+.tabela th:nth-child(2),
+.tabela td:nth-child(2) {
+  width: 20ch; /* 2ª coluna com largura manual */
+}
+
+.tabela thead th {
+  background-color: var(--roxo-escuro);
+  color: #ffffff;
+}
+
+.estrela {
+  fill: var(--amarelinho);
+}
+
+.nota {
+  font-size: 9px;
+  color: var(--cinza);
+}
+
+.comentario {
+  font-size: 12px;
+  color: var(--cinza);
+}
+
+#jogos h1,
+h4 {
+  margin: 0;
+}
+
+#jogos h4 {
+  color: var(--lilac);
+  font-weight: 550;
+  margin-top: -7px;
+  margin-left: 10px;
+}
+
+.jogo {
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 800;
+  color: var(--roxo-escuro);
+
+  background-color: color-mix(in srgb, var(--lilac), transparent 70%);
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR playlist.html */
+
+.playlist ol,
+ul {
+  font-family: "Noto Sans";
+}
+
+/* .playlist ul {
+  list-style: none;
+  list-style: url(img/gifs/estrela.gif);
+} */
+
+.playlist ul li::marker {
+  content: "★ ";
+  color: var(--lilac);
+}
+
+.playlist ol li::marker {
+  color: rgb(208, 183, 238);
+  font-weight: 900;
+}
+
+.playlist strong {
+  color: rgb(117, 77, 168);
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR galeria.html */
+
+.galeria {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gfotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.gfotos img {
+  width: clamp(140px, 24vw, 240px);
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.gfotos figcaption {
+  flex-basis: 100%;
+  width: auto;
+  display: block;
+
+  font-family: "Noto Sans";
+  font-size: 10px;
+  color: #505050;
+
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR contato.html */
+
+#contato h2 {
+  margin-bottom: 32px;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+}
+
+#icon:hover {
+  transform: rotate(7deg) translate(0px, 0px);
+}
+
+#eu {
+  /* width: clamp(120px, 22vw, 260px); cresce/diminui com a janela */
+  width: clamp(80px, 7.5vw, 600px);
+  margin-top: 20px;
+
+  /* position: absolute;
+  bottom: 140px; */
+}
+
+/* ---------------------------------------------- */
+/* ANCHOR index.html */
+
+.portal {
+  background: #ffffff;
+  padding: 40px 60px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  /* height: 500px; */
+  min-height: 500px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto; /* <-- centraliza horizontalmente */
+}
+
+/* texto */
+
+.portal h1 {
+  font-family: "Poppins";
+  margin: 0;
+
+  /* cor */
+  color: rgb(166, 139, 202);
+  /* formatação */
+  font-weight: 700;
+  text-align: center;
+  font-size: 50px;
+}
+
+.portal h2 {
+  font-family: "Poppins";
+  margin: 0;
+
+  /* cor */
+  color: rgb(166, 139, 202);
+  /* formatação */
+  font-weight: 700;
+}
+
+.portal p,
+ul,
+summary {
+  font-family: "Noto Sans";
+  font-weight: 420;
+
+  text-transform: lowercase;
+}
+
+.portal strong {
+  color: rgb(54, 28, 88);
+}
+
+/* ------------------- */
+.menuportal ul {
+  display: flex; /* deixa lado a lado */
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+  width: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  gap: 20px; /* espaço entre os itens */
+  list-style-type: none;
+}
+
+.menuportal a {
+  padding: 10px;
+
+  display: flex; /* vira caixinha flex */
+  justify-content: center; /* centraliza horizontal */
+  align-items: center; /* centraliza vertical */
+
+  width: 130px;
+  height: 40px;
+
+  /* texto */
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 450;
+
+  background: rgb(194, 172, 223); /* cor do botão */
+  border-radius: 40px;
+  border: 1px solid transparent;
+}
+
+.menuportal a:hover {
+  background-color: white;
+  color: rgb(194, 172, 223);
+  border: 1px solid rgb(194, 172, 223);
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ANCHOR página especial */
+
+body.especial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+
+  /* padding: 24px; */
+  background-image: none;
+  background-color: #242424;
+  gap: 8px;
+
+}
+
+body.especial img {
+  display: block; 
+  height: auto;
+  border-radius: 30px;
+}
+
+body.especial p {
+  margin: 0;
+  color: white;
+  font-size: small;
+}
+
+.voltar {
+  display: block;
+  margin-top: 12px;
+  width: 120px;
+  height: 40px;
+
+	background-color:#ffffff;
+	border-radius: 14px;
+	border:1px solid #cacaca;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family: "noto sans";
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.voltar:active {
+	position:relative;
+	top:1px;
+}
