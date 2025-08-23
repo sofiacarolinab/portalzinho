@@ -1,182 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>sorvetinho</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-	<meta charset="UTF-8">
-	<title>sorvetinho</title>
-	<link rel="stylesheet" href="style.css">
-	<!-- fontes -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lancelot&family=Reenie+Beanie&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Reenie+Beanie&family=Rouge+Script&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <div class="headerbox">
+        <p>
+          portalzinho ✦ este é o espaço para explorar conteúdos diferentes em
+          cada página
+        </p>
+      </div>
 
-<body>
+      <nav class="menu">
+        <ul>
+          <!-- <li><a href="index.html">home</a></li> -->
+          <li><a href="contato.html">contato</a></li>
+          <li><a href="galeria.html">galeria</a></li>
+          <li><a href="media.html">play</a></li>
+          <li><a href="playlist.html">playlist</a></li>
+          <li><a href="jogos.html">avaliação de jogos</a></li>
+          <li><a href="form.html">sorvetinho?</a></li>
+          <li><a href="pet.html">meu pet</a></li>
+          <li><a href="curiosidades.html">curiosidades</a></li>
+        </ul>
+      </nav>
+    </header>
 
-	<header>
+    <!-- começa aqui -->
 
-		<div class="headerbox">
-			<p>portalzinho ✦ este é o espaço para explorar conteúdos diferentes em cada página</p>
-		</div>
+    <div class="corpo">
+      <main>
+        <div class="sorvete">
+          <h1>monte seu sorvete</h1>
 
-		<nav class="menu">
-			<ul>
-				<!-- <li><a href="index.html">home</a></li> -->
-				<li><a href="contato.html">contato</a></li>
-				<li><a href="galeria.html">galeria</a></li>
-				<li><a href="media.html">play</a></li>
-				<li><a href="playlist.html">playlist</a></li>
-				<li><a href="jogos.html">avaliação de jogos</a></li>
-				<li><a href="form.html">sorvetinho?</a></li>
-				<li><a href="pet.html">meu pet</a></li>
-				<li><a href="curiosidades.html">curiosidades</a></li>
-			</ul>
-		</nav>
-	</header>
+          <form method="post" action="">
+            <h3>> para quem devo enviar?</h3>
+            <fieldset class="write">
+              <div class="field">
+                <label for="nome">seu nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  value=""
+                  maxlength="20"
+                />
+              </div>
 
+              <div class="field">
+                <label for="email">seu email:</label>
+                <input type="email" id="email" name="email" value="" />
+              </div>
 
-	<!-- começa aqui -->
+              <div class="field">
+                <label for="idade">sua idade:</label>
+                <input
+                  type="number"
+                  id="idade"
+                  name="idade"
+                  value="idade"
+                  max="99"
+                />
+              </div>
+            </fieldset>
 
-	<div class="corpo">
-		<main>
-			<div class="sorvete">
-				<h1>monte seu sorvete</h1>
+            <!-- opções -->
 
-				<form method="post" action="">
-					<h3>> para quem devo enviar?</h3>
-					<fieldset class="write">
-						<div class="field">
-							<label for="nome">seu nome:</label>
-							<input type="text" id="nome" name="nome" value="" maxlength="20"/>
-						</div>
+            <h3>> como você deseja o seu sorvete?</h3>
+            <fieldset class="select">
+              <div class="field">
+                <div class="options">
+                  <label class="labelgrupo">sabor favorito:</label>
 
+                  <input
+                    type="radio"
+                    id="chocolate"
+                    name="sabor"
+                    value="chocolate"
+                  />
+                  <label for="chocolate">chocolate</label>
 
+                  <input
+                    type="radio"
+                    id="morango"
+                    name="sabor"
+                    value="morango"
+                  />
+                  <label for="morango">morango</label>
 
-						<div class="field">
-							<label for="email">seu email:</label>
-							<input type="email" id="email" name="email" value=""/>
-						</div>
+                  <input
+                    type="radio"
+                    id="baunilha"
+                    name="sabor"
+                    value="baunilha"
+                  />
+                  <label for="baunilha">baunilha</label>
 
+                  <input type="radio" id="menta" name="sabor" value="menta" />
+                  <label for="menta">menta com chocolate</label>
+                </div>
+              </div>
 
+              <div class="field">
+                <div class="options">
+                  <label class="labelgrupo">complementos:</label>
 
-						<div class="field">
-							<label for="idade">sua idade:</label>
-							<input type="number" id="idade" name="idade" value="idade" max="99"/>
-						</div>
-					</fieldset>
+                  <input
+                    type="checkbox"
+                    id="granulado"
+                    name="complementos[]"
+                    value="granulado"
+                  />
+                  <label for="granulado">granulado</label>
 
+                  <input
+                    type="checkbox"
+                    id="calda"
+                    name="complementos[]"
+                    value="calda"
+                  />
+                  <label for="calda">calda</label>
 
+                  <input
+                    type="checkbox"
+                    id="castanha"
+                    name="complementos[]"
+                    value="castanha"
+                  />
+                  <label for="castanha">castanha</label>
 
-					<!-- opções -->
+                  <input
+                    type="checkbox"
+                    id="cereja"
+                    name="complementos[]"
+                    value="cereja"
+                  />
+                  <label for="cereja">cereja</label>
+                </div>
+              </div>
+            </fieldset>
 
-					<h3>> como você deseja o seu sorvete?</h3>
-					<fieldset class="select">
-						<div class="field">
-							<div class="options">
-								<label class="labelgrupo">sabor favorito:</label>
+            <input type="submit" name="" value="pedir!" />
+          </form>
+        </div>
+      </main>
 
+      <!-- form -->
+      <details class="conteudo">
+        <summary>conteúdo explorado nessa página:</summary>
+        <ul>
+          <li>div.sorvete: contêiner do formulário.</li>
+          <li>h1: título “monte seu sorvete”.</li>
+          <li>form (method="post" action=""): formulário de envio.</li>
+          <li>h3: subtítulos das seções.</li>
+          <li>fieldset.write: grupo de dados do usuário.</li>
+          <li>div.field: bloco de cada campo.</li>
+          <li>label[for] + input#nome[type="text" maxlength="20"]: nome.</li>
+          <li>label + input#email[type="email"]: e-mail.</li>
+          <li>label + input#idade[type="number" max="99"]: idade.</li>
+          <li>fieldset.select: grupo de opções do sorvete.</li>
+          <li>div.options: contêiner dos inputs de escolha.</li>
+          <li>
+            label.labelgrupo: rótulo de grupo (“sabor favorito”,
+            “complementos”).
+          </li>
+          <li>
+            input[type="radio" name="sabor"] + label: sabores (chocolate,
+            morango, baunilha, menta).
+          </li>
+          <li>
+            input[type="checkbox" name="complementos[]"] + label: complementos
+            (granulado, calda, castanha, cereja).
+          </li>
+          <li>input[type="submit" value="pedir!"]: botão de envio.</li>
+        </ul>
+      </details>
 
-								<input type="radio" id="chocolate" name="sabor" value="chocolate" />
-								<label for="chocolate">chocolate</label>
+      <footer>
+        <div class="textfooter">
+          <p id="croac">croac</p>
+          <p>
+            você encontrou o rodapé
+            <span id="sofia"
+              >feito por <a href="sofiac.html">Sofia Carolina</a></span
+            >
+          </p>
+        </div>
 
-								<input type="radio" id="morango" name="sabor" value="morango" />
-								<label for="morango">morango</label>
+        <div class="iconfooter">
+          <a href="index.html" title="home">
+            <svg
+              id="icon-casa"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M132-92v-522.11l348-261.56 348.67 261.23V-92h-262v-314.67H393.33V-92H132Z"
+              />
+            </svg>
+          </a>
+        </div>
 
-								<input type="radio" id="baunilha" name="sabor" value="baunilha" />
-								<label for="baunilha">baunilha</label>
-
-								<input type="radio" id="menta" name="sabor" value="menta" />
-								<label for="menta">menta com chocolate</label>
-							</div>
-						</div>
-
-
-
-						<div class="field">
-							<div class="options">
-								<label class="labelgrupo">complementos:</label>
-
-
-								<input type="checkbox" id="granulado" name="complementos[]" value="granulado" />
-								<label for="granulado">granulado</label>
-
-								<input type="checkbox" id="calda" name="complementos[]" value="calda" />
-								<label for="calda">calda</label>
-
-								<input type="checkbox" id="castanha" name="complementos[]" value="castanha" />
-								<label for="castanha">castanha</label>
-
-								<input type="checkbox" id="cereja" name="complementos[]" value="cereja" />
-								<label for="cereja">cereja</label>
-							</div>
-						</div>
-					</fieldset>
-
-
-
-
-					<input type="submit" name="" value="pedir!" />
-				</form>
-
-
-			</div>
-		</main>
-
-		<!-- form -->
-		<details class="conteudo">
-			<summary>conteúdo explorado nessa página:</summary>
-			<ul>
-				<li>div.sorvete: contêiner do formulário.</li>
-				<li>h1: título “monte seu sorvete”.</li>
-				<li>form (method="post" action=""): formulário de envio.</li>
-				<li>h3: subtítulos das seções.</li>
-				<li>fieldset.write: grupo de dados do usuário.</li>
-				<li>div.field: bloco de cada campo.</li>
-				<li>label[for] + input#nome[type="text" maxlength="20"]: nome.</li>
-				<li>label + input#email[type="email"]: e-mail.</li>
-				<li>label + input#idade[type="number" max="99"]: idade.</li>
-				<li>fieldset.select: grupo de opções do sorvete.</li>
-				<li>div.options: contêiner dos inputs de escolha.</li>
-				<li>
-				label.labelgrupo: rótulo de grupo (“sabor favorito”, “complementos”).
-				</li>
-				<li>
-				input[type="radio" name="sabor"] + label: sabores (chocolate, morango,
-				baunilha, menta).
-				</li>
-				<li>
-				input[type="checkbox" name="complementos[]"] + label: complementos
-				(granulado, calda, castanha, cereja).
-				</li>
-				<li>input[type="submit" value="pedir!"]: botão de envio.</li>
-			</ul>
-		</details>
-
-		<footer>
-
-			<div class="textfooter">
-				<p id="croac">croac</p>
-				<p>
-					você encontrou o rodapé
-					<span id="sofia">feito por <a href="sofiac.html">Sofia Carolina</a></span>
-				</p>
-	
-			</div>
-
-			<div class="iconfooter">
-				
-				<a href="index.html" title="home">
-					<svg id="icon-casa" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M132-92v-522.11l348-261.56 348.67 261.23V-92h-262v-314.67H393.33V-92H132Z"/></svg>	
-				</a>
-
-			</div>
-		
-			<img src="img/gifs/sapinho.gif" alt="">
-
-		</footer>
-	</div>
-</body>
-
+        <img src="img/gifs/sapinho.gif" alt="" />
+      </footer>
+    </div>
+  </body>
 </html>

@@ -18,7 +18,6 @@ body {
   /* center */
 }
 
-
 .corpo {
   background: #ffffff;
   padding: 40px 60px 40px;
@@ -69,7 +68,9 @@ h1 {
   margin-bottom: 8px;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   font-family: "Noto Sans";
   color: var(--cinza-escuro);
 }
@@ -138,16 +139,15 @@ p, ul, ol {
 /* ANCHOR conteudo */
 
 #esquerda {
-  margin-top: auto;        /* empurra pro fim da coluna (lá embaixo) */
-  align-self: flex-start;    /* alinha na direita (eixo horizontal) */
-  width: max-content;      /* não ocupar 100% da largura */ 
+  margin-top: auto; /* empurra pro fim da coluna (lá embaixo) */
+  align-self: flex-start; /* alinha na direita (eixo horizontal) */
+  width: max-content; /* não ocupar 100% da largura */
 }
 
 .conteudo {
   display: block;
   margin-top: auto;
 }
-
 
 .conteudo summary {
   opacity: 50%;
@@ -158,7 +158,7 @@ p, ul, ol {
   border: 1px solid #ebebeb;
   border-radius: 20px;
   width: 180px;
-  
+
   font-size: 10px;
   color: #b6b6b6;
   text-align: center;
@@ -170,7 +170,7 @@ p, ul, ol {
 }
 
 .conteudo ul li::marker {
-  content: "✱ "
+  content: "✱ ";
 }
 
 .conteudo[open] ul {
@@ -243,20 +243,20 @@ footer img {
   width: 18px;
   height: auto;
   fill: var(--roxito);
-  transition: fill .2s, transform .2s;
+  transition: fill 0.2s, transform 0.2s;
 }
 
 .iconfooter a {
   display: inline-flex;
-  align-items: center; justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   padding: 10px;
   border-radius: 50%;
-
 }
 
 .iconfooter a:hover #icon-casa {
-  fill: var(--lilac);          /* exemplo */
+  fill: var(--lilac); /* exemplo */
   transform: translateY(0px) scale(1.45);
 }
 
@@ -266,7 +266,7 @@ footer div {
 }
 
 .textfooter {
-min-width: 50%;
+  min-width: 50%;
 }
 
 .iconfooter {
@@ -274,7 +274,6 @@ min-width: 50%;
   align-items: center;
   min-width: 50%;
 }
-
 
 /* ---------------------------------------------- */
 /* ANCHOR media */
@@ -836,11 +835,10 @@ body.especial {
   background-image: none;
   background-color: #242424;
   gap: 8px;
-
 }
 
 body.especial img {
-  display: block; 
+  display: block;
   height: auto;
   border-radius: 30px;
 }
@@ -857,21 +855,21 @@ body.especial p {
   width: 120px;
   height: 40px;
 
-	background-color:#ffffff;
-	border-radius: 14px;
-	border:1px solid #cacaca;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-family: "noto sans";
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #cacaca;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: "noto sans";
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
 }
 
 .voltar:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }

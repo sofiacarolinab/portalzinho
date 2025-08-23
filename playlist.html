@@ -1,109 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>playlist</title>
-	<link rel="stylesheet" href="style.css">
-	<!-- fontes -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <title>playlist</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-	<link href="https://fonts.googleapis.com/css2?family=Lancelot&family=Reenie+Beanie&family=Rouge+Script&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lancelot&family=Reenie+Beanie&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-	
-	<header>
+  <body>
+    <header>
+      <div class="headerbox">
+        <p>
+          portalzinho ✦ este é o espaço para explorar conteúdos diferentes em
+          cada página
+        </p>
+      </div>
 
-		<div class="headerbox">
-			<p>portalzinho ✦ este é o espaço para explorar conteúdos diferentes em cada página</p>
-		</div>
+      <nav class="menu">
+        <ul>
+          <!-- <li><a href="index.html">home</a></li> -->
+          <li><a href="contato.html">contato</a></li>
+          <li><a href="galeria.html">galeria</a></li>
+          <li><a href="media.html">play</a></li>
+          <li><a href="playlist.html">playlist</a></li>
+          <li><a href="jogos.html">avaliação de jogos</a></li>
+          <li><a href="form.html">sorvetinho?</a></li>
+          <li><a href="pet.html">meu pet</a></li>
+          <li><a href="curiosidades.html">curiosidades</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<nav class="menu">
-			<ul>
-				<!-- <li><a href="index.html">home</a></li> -->
-				<li><a href="contato.html">contato</a></li>
-				<li><a href="galeria.html">galeria</a></li>
-				<li><a href="media.html">play</a></li>
-				<li><a href="playlist.html">playlist</a></li>
-				<li><a href="jogos.html">avaliação de jogos</a></li>
-				<li><a href="form.html">sorvetinho?</a></li>
-				<li><a href="pet.html">meu pet</a></li>
-				<li><a href="curiosidades.html">curiosidades</a></li>
-			</ul>
-		</nav>
-	</header>
+    <div class="corpo">
+      <main class="playlist">
+        <h1>minhas músicas</h1>
 
-	<div class="corpo">
-		<main class="playlist">
+        <div id="topmusicas">
+          <h3>> top 3</h3>
+          <ol>
+            <li><strong>lovesong</strong> - the cure</li>
+            <li><strong>the lovecats</strong> - the cure</li>
+            <li><strong>a forest</strong> - the cure</li>
+          </ol>
+        </div>
 
-				<h1>minhas músicas</h1>
-				
-				<div id="topmusicas">
-					<h3>> top 3</h3>
-					<ol>
-						<li><strong>lovesong</strong> - the cure</li>
-						<li><strong>the lovecats</strong> - the cure</li>
-						<li><strong>a forest</strong> - the cure</li>
-					</ol>
-				</div>
+        <div id="outrasmusicas">
+          <h3>> outras músicas que eu também gosto:</h3>
+          <ul>
+            <li><strong>close to me</strong> - the cure</li>
+            <li><strong>boys don't cry</strong> - the cure</li>
+            <li><strong>just like heaven</strong> - the cure</li>
+          </ul>
+        </div>
+      </main>
 
-				<div id="outrasmusicas">
-					<h3>> outras músicas que eu também gosto:</h3>
-					<ul>
-						<li><strong>close to me</strong> - the cure</li>
-						<li><strong>boys don't cry</strong> - the cure</li>
-						<li><strong>just like heaven</strong> - the cure</li>
-					</ul>
-					
-				</div>
+      <!-- playlist -->
+      <details class="conteudo">
+        <summary>conteúdo explorado nessa página:</summary>
+        <ul>
+          <li>main.playlist: área principal da página de músicas.</li>
+          <li>h1: título “minhas músicas”.</li>
+          <li>div #topmusicas: bloco do “top 3”.</li>
+          <li>h3: subtítulo da seção (“> top 3”).</li>
+          <li>ol: lista ordenada com as 3 faixas.</li>
+          <li>li: cada música do top 3.</li>
+          <li>strong: destaque para o nome da música.</li>
+          <br />
+          <li>div #outrasmusicas: bloco das demais faixas.</li>
+          <li>h3: subtítulo (“> outras músicas…”).</li>
+          <li>ul: lista não ordenada das outras músicas.</li>
+          <li>li: cada item da lista.</li>
+          <li>strong: destaque para o nome da música.</li>
+        </ul>
+      </details>
 
-		</main>
+      <footer>
+        <div class="textfooter">
+          <p id="croac">croac</p>
+          <p>
+            você encontrou o rodapé
+            <span id="sofia"
+              >feito por <a href="sofiac.html">Sofia Carolina</a></span
+            >
+          </p>
+        </div>
 
-		<!-- playlist -->
-		<details class="conteudo">
-			<summary>conteúdo explorado nessa página:</summary>
-			<ul>
-				<li>main.playlist: área principal da página de músicas.</li>
-				<li>h1: título “minhas músicas”.</li>
-				<li>div #topmusicas: bloco do “top 3”.</li>
-				<li>h3: subtítulo da seção (“> top 3”).</li>
-				<li>ol: lista ordenada com as 3 faixas.</li>
-				<li>li: cada música do top 3.</li>
-				<li>strong: destaque para o nome da música.</li>
-				<br />
-				<li>div #outrasmusicas: bloco das demais faixas.</li>
-				<li>h3: subtítulo (“> outras músicas…”).</li>
-				<li>ul: lista não ordenada das outras músicas.</li>
-				<li>li: cada item da lista.</li>
-				<li>strong: destaque para o nome da música.</li>
-			</ul>
-		</details>
+        <div class="iconfooter">
+          <a href="index.html" title="home">
+            <svg
+              id="icon-casa"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M132-92v-522.11l348-261.56 348.67 261.23V-92h-262v-314.67H393.33V-92H132Z"
+              />
+            </svg>
+          </a>
+        </div>
 
-
-		<footer>
-
-			<div class="textfooter">
-				<p id="croac">croac</p>
-				<p>
-					você encontrou o rodapé
-					<span id="sofia">feito por <a href="sofiac.html">Sofia Carolina</a></span>
-				</p>
-	
-			</div>
-
-			<div class="iconfooter">
-				
-				<a href="index.html" title="home">
-					<svg id="icon-casa" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M132-92v-522.11l348-261.56 348.67 261.23V-92h-262v-314.67H393.33V-92H132Z"/></svg>	
-				</a>
-
-			</div>
-		
-			<img src="img/gifs/sapinho.gif" alt="">
-
-		</footer>		
-	</div>
-</body>
+        <img src="img/gifs/sapinho.gif" alt="" />
+      </footer>
+    </div>
+  </body>
 </html>
